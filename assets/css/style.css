@@ -1,3 +1,21 @@
 body {
-    background-color: black;
+    height: 2000px;
 }
+#parallax-container {
+    display: block;
+    height: 100%; 
+    width: 100%;
+  }
+
+  #parallax-container div {
+    left: 0;
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    transform: translateY(0px);
+    height: 100%;
+    width: 100%;
+
+  }
