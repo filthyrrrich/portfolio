@@ -1,5 +1,5 @@
 body {
-    /* height: 500px; */
+    height: 500px;
     /* position: relative; */
     /* display: block; */
     /* overflow-x: hidden; */
@@ -41,7 +41,7 @@ div {
     position: fixed;
     /* background: rgb(214, 23, 23); */
     background-image: url("../images/backgrounds/tree-texture-bg.jpg");
-    opacity: 0.95;
+    opacity: 0.8;
     /* transition: 1s; */
 }
 .navbar a:hover {
@@ -50,7 +50,9 @@ div {
 .appear a:hover {
     color: #ff737d;
     text-shadow:  0 0 20px #999595;
+
 }
+
 
 .navbar {
     width: 100%;
@@ -70,7 +72,10 @@ div {
     padding: 0 18px;
     font-size: 20px;
 }
-
+.navbar a.active {
+    color: #ff737d;
+    text-shadow:  0 0 20px #999595;
+}
   .mainContent {
       width: 100%;
     /* align-items: center; */

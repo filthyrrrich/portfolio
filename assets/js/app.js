@@ -5,12 +5,13 @@ window.addEventListener('scroll', () => {
     for(let i = 0; i < children.length; i++) {
       children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
     }
-    
+    changeLinkState();
+
  }, false)
 
 
  // Swiper for projects
- var swiper = new Swiper('.swiper-container', {
+ const swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -28,12 +29,21 @@ window.addEventListener('scroll', () => {
 });
 
 // Navbar scroll
-
-var nav = document.getElementsByClassName("navbar");
+const nav = document.getElementsByClassName("navbar");
 window.onscroll = function sticky() {
     if (window.pageYOffset > window.innerHeight / 1.2){
         nav[0].classList.add("appear");
     } else {
         nav[0].classList.remove("appear");
     }
+}
+
+// applys active on links
+const links = document.querySelectorAll('.links');
+const sections = document.querySelectorAll('.section');
+function changeLinkState() {
+  let index = sections.length;
+  while(--index && window.scrollY + 100 < sections[index].offsetTop);
+  links.forEach((link) => link.classList.remove('active'));
+  links[index].classList.add('active');
 }

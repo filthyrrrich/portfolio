@@ -12,10 +12,11 @@
 <body>
     <div class="header">
         <div class="navbar">
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-            <a href="#">Resume</a>
+            <a class="links" style="display: none"href="#"></a>
+            <a class="links" href="#about">About</a>
+            <a class="links" href="#portfolio">Portfolio</a>
+            <a class="links" href="#contact">Contact</a>
+            <a class="links" href="#">Resume</a>
         </div>
     </div>
 
@@ -31,7 +32,7 @@
     <div class="parallaxTransiton"></div>
 
     <div class="mainContent">
-        <div class="aboutMe">
+        <div class="aboutMe section" id="about">
             <div class="box">
                 <h2>About Me</h2>
 
@@ -62,7 +63,7 @@
             </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio section" id="portfolio">
             <h2>Portfolio</h2>
             <h3>Highlighted Projects</h3>
 
@@ -229,6 +230,16 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
+        <div class="contact section">
+                <form method="POST" action="https://formspree.io/filthyrrrich@gmail.com">
+                    <input type="text" name="name">
+                    <input type="email" name="_replyto">
+                    <input type="submit" value="Send">
+                </form>
+                    
+        </div>
+
     </div>
 
 
