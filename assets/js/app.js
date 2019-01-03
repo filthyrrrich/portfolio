@@ -26,3 +26,14 @@ window.addEventListener('scroll', () => {
     el: '.swiper-pagination',
   },
 });
+
+// Navbar scroll
+
+var nav = document.getElementsByClassName("navbar");
+window.onscroll = function sticky() {
+    if (window.pageYOffset > window.innerHeight / 1.2){
+        nav[0].classList.add("appear");
+    } else {
+        nav[0].classList.remove("appear");
+    }
+}

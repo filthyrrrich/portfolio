@@ -34,6 +34,44 @@ div {
     /* justify-content: center; */
     /* align-items: center; */
 }
+.header {
+    width: 100%;
+}
+.appear {
+    position: fixed;
+    /* background: rgb(214, 23, 23); */
+    background-image: url("../images/backgrounds/tree-texture-bg.jpg");
+    opacity: 0.95;
+    /* transition: 1s; */
+}
+.navbar a:hover {
+    color: #333;
+}
+.appear a:hover {
+    color: #ff737d;
+    text-shadow:  0 0 20px #999595;
+
+}
+
+.navbar {
+    width: 100%;
+    padding: 18px 0;
+    text-align: right;
+    z-index: 1;
+    position: fixed;
+}
+.navbar a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-shadow:  0 0 20px #000000;
+    text-align: right;
+    transition: 0.3s;
+    width: 100%;
+    padding: 0 18px;
+    font-size: 20px;
+}
+
   .mainContent {
       width: 100%;
     /* align-items: center; */
@@ -43,7 +81,8 @@ div {
     top: 105%;
     color: black;
     position: absolute;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url("../images/backgrounds/tree-texture-bg.jpg")
     /* z-index: 1; */
   }
 
