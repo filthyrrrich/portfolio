@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
@@ -11,19 +12,215 @@
 <body>
 
     <div id="parallax-container">
-        <div style="background: url(./assets/images/backgrounds/sunrise-bg.jpeg);"></div>
-        <div style="background: url(./assets/images/backgrounds/sunrise-mountains-1.png);"></div>
-        <div style="background: url(./assets/images/backgrounds/sunrise-mountains-2.png);"></div>
-        <div style="background: url(./assets/images/backgrounds/sunrise-buildings.png);"></div>
-        <div style="background: url(./assets/images/backgrounds/sunrise-trees.png);"></div>
-
-
-        <!-- <div class="fade" style="background: url(./images/skyline-colored-mountains.png);"></div>
-        <div class="fade" style="background: url(./images/skyline-colored-mountains.png);"></div>
-        <div class="fade" style="background: url(./images/skyline-colored-buildingsWtrees.png);"></div>
-        <div class="fade" class="trees" style="background: url(./images/skyline-colored-trees.png);"></div> -->
+        <div class="layer1"></div>
+        <div class="layer2"></div>
+        <div class="layer3"></div>
+        <div class="layer4"></div>
+        <div class="layer5"></div>
     </div>
 
+    <div class="parallaxTransiton"></div>
+
+    <div class="mainContent">
+        <div class="aboutMe">
+            <div class="box">
+                <h2>About Me</h2>
+
+                <img class="headshot" src="./assets/images/skills/headshot.jpg">
+
+                <p>Richard Schiffer Jr. is an American born poker player and skateboarder currently living in Colorado.</p>
+                <br>
+                <p>Richard (Rich or Filthy Rich) was born in Silicon Valley, California; I guess you could say technology is in his blood! He lived in the south bay area for 20 years before moving out to the Rocky Mountains. In Colorado, he met his beautiful wife, Alyssa, and together they discovered their passion for playing poker. His background for most of his working life has been in sales and customer service. Recently, he has been working in the casino industry as a Table Games Dealer (BlackJack, Roulette, Poker), but is ready to start the next chapter of his life in the tech industry.</p>
+                <br>
+                <p>Rich is a newly graduated Full-Stack Web Developer from the University of Denver and his wife is currently pursuing her nursing degree at the University of Colorado. Upon graduation he started his own company (Freeroll, LLC). He is currently working on various freelance projects while searching for a full-time job. </p>
+                
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="skillsBox">
+                        <img class="skillLogo" src="./assets/images/skills/html-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/css-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/javascript-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/bootstrap-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/react-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/node-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/express-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/npm-logo.png">
+                        <img class="skillLogo" src="./assets/images/skills/mongo-logo.jpg">
+                        <img class="skillLogo" src="./assets/images/skills/mysql-logo.jpg">
+                        <img class="skillLogo" src="./assets/images/skills/heroku-logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <h2>Portfolio</h2>
+            <h3>Highlighted Projects</h3>
+
+            <div class="featured">
+                <div class="imgBox">
+                    <img src="./assets/images/projects/PlatteRiver-pimg.png" class="img-responsive">
+                </div>
+                <div class="projectContent">
+                    <h3>Platte River Website</h3>
+                    <p>Freelance Website I am currently building for a client.</p>
+                    <button>Demo</button>
+                    <button>Github</button>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="imgBox">
+                    <img src="./assets/images/projects/GATESapp-pimg.png" class="img-responsive">
+                </div>
+                <div class="projectContent">
+                    <h3>GATES App</h3>
+                    <p>A MERN stack app designed to help employees access their schedule more easily and communicate with their employer more efficently</p>
+                    <button>Demo</button>
+                    <button>Github</button>
+                </div>
+            </div>
+
+        
+            <div class="swiper-container">
+                <div class="swiper-wrapper parentSwiper">
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/TriviaGame-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Movie Quotes Trivia</h3>
+                            <p>A fun trivia game I built. Can you guess the movie from some of my favorite quotes?</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/hangjack-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Hang Jack</h3>
+                            <p>A poker themed "hangman" game. Can you save Jack before they Hang Jack?</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/Burger-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Eat Dat Burger</h3>
+                            <p>In this project we made a burger app where you can enter a burger to order then click it to eat it.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/ColfaxThangs-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Colfax Thangs</h3>
+                            <p>My first group project. A side-scrolling RPG that mixes "Stranger Things" with Denvers iconic Colfax Ave.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/ClickyGame-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Xenogears Clicky Game</h3>
+                            <p>A memory style game. Try to click each of the images only once as they are scrambled randomly after each selection. </p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/TrainScheduler-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Gravy Train Scheduler</h3>
+                            <p>An app that displays current train schedule times and allows you to add your own train.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/GifTastic-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Gettin' Giphy With It</h3>
+                            <p>An app that displays some of my favorite random movie gifs. Easily allows you to search and add your own.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/chipcollector-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Chip Collector Game</h3>
+                            <p>A game that generates a random target number to reach by clicking on different value chips. The chip values are randomlized after each round. </p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/FriendFinder-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Friend Finder</h3>
+                            <p>An app that allows the user to take a survey which searches the database of all surveys taken and finds the closest compatable match for you.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/Bamazon-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Bamazon</h3>
+                            <p>A simple command-line app that allows the user to edit inventorys in a database.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/LIRI-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>LIRI</h3>
+                            <p>A simple command-line app that performs API searches.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBox">
+                            <img src="./assets/images/projects/psychic-pimg.png" class="img-responsive">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Psychic Game</h3>
+                            <p>The first app I ever built! Try to guess the randomly generated letter within the given number of attempts.</p>
+                            <button>Demo</button>
+                            <button>Github</button>
+                        </div>
+                    </div>                    
+                </div>
+                    <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
 
 
     

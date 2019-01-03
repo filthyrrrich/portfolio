@@ -1,21 +1,196 @@
 body {
-    height: 2000px;
+    /* height: 500px; */
+    /* position: relative; */
+    /* display: block; */
+    /* overflow-x: hidden; */
+}
+div {
+    /* display: block; */
 }
 #parallax-container {
-    display: block;
+    /* position: absolute; */
+    /* display: block; */
     height: 100%; 
     width: 100%;
   }
 
-  #parallax-container div {
+  #parallax-container div, .parallaxTransiton{
     left: 0;
     position: fixed;
     top: 0;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     transform: translateY(0px);
     height: 100%;
     width: 100%;
+    /* display: block; */
 
   }
+.portfolio {
+    /* margin: 0 auto; */
+    /* max-width: 900px; */
+    /* width: 100%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+  .mainContent {
+      width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* max-width: 900px; */
+    text-align: center;
+    top: 105%;
+    color: black;
+    position: absolute;
+    background-color: black;
+    /* z-index: 1; */
+  }
+
+  .layer1 {
+    background-image: url("../images/backgrounds/sunrise-bg.jpeg");
+  }
+  .layer2 {
+    background-image: url("../images/backgrounds/sunrise-mountains-1.png");
+  }
+  .layer3 {
+    background-image: url("../images/backgrounds/sunrise-mountains-2.png");
+  }
+  .layer4 {
+    background-image: url("../images/backgrounds/sunrise-buildings.png");
+  }
+  .layer5 {
+    background-image: url("../images/backgrounds/sunrise-trees.png");
+  }
+
+  .parallaxTransiton {
+    background-image: url("../images/backgrounds/sunrise-trees.png");
+    top: 5%;
+   /* z-index: 0; */
+   position: absolute;
+  }
+  .headshot {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .box, h2{
+      /* position: relative; */
+    font-size: 20px;
+    color: white;
+    padding: 40px 0px 10px 0px;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  .skillsBox {
+    padding: 20px 0px;
+    background: #fff;
+  }
+  .skillLogo {
+    width: 100px;
+    padding: 0px 10px;
+    
+  }
+
+
+  /*need to adjust max width for each resolution size*/
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide, .featured {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+  }
+  .swiper-pagination-bullet-active {
+    background: #007aff;
+  
+  }
+  .parentSwiper {
+    /* opacity: 0; */
+    
+  }
+
+  .featured {
+    display: inline-block;
+    padding: 10px;
+    background: black;
+  }
+
+  .swiper-slide-active, .featured {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    background: #000;
+    box-shadow:  0 5px 20px rgba(245, 244, 244, 0.5);
+    transition: .5s;
+  }
+  
+  
+  .swiper-slide-active .imgBox,.featured .imgBox {
+    position: relative;
+  }
+  
+  .imgBox img {
+    transition: 0.5s;
+    width: 100%;
+  }
+  
+  .swiper-slide-active:hover .imgBox img, .featured:hover .imgBox img{
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+  
+  .swiper-slide-active .projectContent, .featured .projectContent {
+    color: white;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing:  border-box;
+    /* transition: 0.5s; */
+    opacity: 0;
+  
+  }
+  
+  .swiper-slide-active:hover .projectContent,.featured:hover .projectContent  {
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 1;
+  }
+  .swiper-slide-active .projectContent h3, .featured .projectContent h3 {
+    font-size: 48px; 
+    /* font-weight: 400; */
+  }
+  .swiper-slide-active .projectContent button, .featured .projectContent button {
+    border: none;
+    background: #fe1b70;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  .swiper-slide-active .projectContent button:hover, .featured .projectContent button:hover{
+    
+    background: #f6fe1b;
+    color: #262626;
+   
+  }
+  
+  h3 {
+    color: white;
+  }
+  
