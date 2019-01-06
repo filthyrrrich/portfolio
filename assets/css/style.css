@@ -37,7 +37,7 @@ body {
 
 #parallax-container div, .parallaxTransiton{
 left: 0;
-position: fixed;
+position: absolute;
 top: 0;
 background-position: center;
 background-size: cover;
