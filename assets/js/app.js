@@ -14,17 +14,17 @@ window.addEventListener('scroll', () => {
 
     // Active Links
     if(sections[2].getBoundingClientRect().top < 100) {
-        changeLinkState(3);
-    } else if(sections[1].getBoundingClientRect().top < 100) {
         changeLinkState(2);
-    } else if(sections[0].getBoundingClientRect().top < 100) {
+    } else if(sections[1].getBoundingClientRect().top < 100) {
         changeLinkState(1);
+    } else if(sections[0].getBoundingClientRect().top < 100) {
+        changeLinkState(0);
     } else {
         links.forEach((link) => link.classList.remove('active'));
     }
 
     // Navbar Appear
-    if (window.pageYOffset > window.innerHeight / 1.2){
+    if (window.pageYOffset > window.innerHeight / 1.05){
         nav[0].classList.add("appear");
     } else {
         nav[0].classList.remove("appear");
