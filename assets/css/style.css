@@ -1,9 +1,13 @@
-body {
-    overflow-x: hidden;
-}
+
 html {
-    min-height: 100vh;
+    /* overflow: hidden; */
+    height: 100%;
     scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    /* overflow: auto; */
+    -webkit-overflow-scrolling: touch;
 }
 .intro {
     margin-left: 5%;
@@ -229,7 +233,7 @@ hr {
     text-shadow:  0 0 20px #999595;
 }
 .mainContent {
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100%;
     text-align: center;
     top: 105%;
