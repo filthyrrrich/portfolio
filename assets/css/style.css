@@ -228,48 +228,49 @@ hr {
     text-shadow:  0 0 20px #999595;
 }
 .mainContent {
-width: 100%;
-text-align: center;
-top: 105%;
-color: black;
-position: absolute;
-z-index: 2;
-background-image: url("../images/backgrounds/tree-texture-bg.jpg")
+    overflow-y: hidden;
+    width: 100%;
+    text-align: center;
+    top: 105%;
+    color: black;
+    position: absolute;
+    z-index: 2;
+    background-image: url("../images/backgrounds/tree-texture-bg.jpg")
 }
 .layer1 {
-background-image: url("../images/backgrounds/sunrise-bg.jpeg");
+    background-image: url("../images/backgrounds/sunrise-bg.jpeg");
 }
 .layer2 {
-background-image: url("../images/backgrounds/sunrise-mountains-1.png");
-}
+    background-image: url("../images/backgrounds/sunrise-mountains-1.png");
+    }
 .layer3 {
-background-image: url("../images/backgrounds/sunrise-mountains-2.png");
+    background-image: url("../images/backgrounds/sunrise-mountains-2.png");
 }
 .layer4 {
-background-image: url("../images/backgrounds/sunrise-buildings.png");
+    background-image: url("../images/backgrounds/sunrise-buildings.png");
 }
 .layer5 {
-background-image: url("../images/backgrounds/sunrise-trees.png");
+    background-image: url("../images/backgrounds/sunrise-trees.png");
 }
 
 .parallaxTransiton {
-background-image: url("../images/backgrounds/sunrise-trees.png");
-top: 5%;
-z-index: 3;
-position: absolute;
+    background-image: url("../images/backgrounds/sunrise-trees.png");
+    top: 5%;
+    z-index: 3;
+    position: absolute;
 }
 .flip {
-z-index: 1;
-position: relative;
-/* bottom: -150px; */
-height:300px;
-width: 100%;
-background-image: url("../images/backgrounds/sunrise-treeline-flipped.png");
+    z-index: 1;
+    position: relative;
+    /* bottom: -150px; */
+    height:300px;
+    width: 100%;
+    background-image: url("../images/backgrounds/sunrise-treeline-flipped.png");
 }
 .headshot {
-width: 300px;
-height: 300px;
-border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 
 .about-summary {
@@ -277,8 +278,8 @@ border-radius: 50%;
     max-width: 75%;
 }
 p { 
-font-size: 20px;
-color: white;
+    font-size: 20px;
+    color: white;
     margin: 20px;
     padding: 10px 50px;
 }
