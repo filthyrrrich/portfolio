@@ -331,6 +331,7 @@ text-transform: uppercase;
   }
 
   .swiper-slide, .featured {
+    cursor: pointer;
     border: 1px solid white;
     position: relative;
     background-position: center;
