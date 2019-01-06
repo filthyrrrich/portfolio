@@ -6,18 +6,17 @@ html {
 }
 .intro {
     margin-left: 5%;
-
-font-family: Impact, Charcoal, sans-serif;
+    font-family: Impact, Charcoal, sans-serif;
     font-weight: bold;
     font-size: 50px;
-  color: white;
-  text-shadow: 2px 2px black;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  top: 20%;
-  text-align: center;  
+    color: white;
+    text-shadow: 2px 2px black;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 20%;
+    text-align: center;  
 }
 .intro span.job {
     line-height: 0.5;
@@ -29,22 +28,24 @@ font-family: Impact, Charcoal, sans-serif;
 #parallax-container {
     height: 100%; 
     width: 100%;
-  }
+}
 
-  #parallax-container div, .parallaxTransiton{
-    left: 0;
-    position: fixed;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform: translateY(0px);
-    height: 100%;
-    width: 100%;
-    /* display: block; */
+#parallax-container div, .parallaxTransiton{
+left: 0;
+position: fixed;
+top: 0;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+transform: translateY(0px);
+height: 100%;
+width: 100%;
+/* display: block; */
 
-  }
-
+}
+hr {
+    margin: 0;
+}
 .header {
     width: 100%;
 }
@@ -64,12 +65,13 @@ font-family: Impact, Charcoal, sans-serif;
 
 /* contact section */
 .contact {
+    position: relative;
     color: black;
     background: white;
     width: 100%;
     height: 960px;
     background-image: url("../images/backgrounds/bench2.jpg");
-    background-position: center right;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -83,18 +85,21 @@ font-family: Impact, Charcoal, sans-serif;
     font-size: 20px;
 }
 .contact ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     position: absolute;
-    bottom: 480px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
+    /* bottom: 480px; */
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+    /* margin: 0; */
     padding: 0;
     display: flex;
 }
 .contact ul li {
     list-style: none;
     position: relative;
-    margin: 0 20px;
+    margin: 10px 20px;
 }
 .contact ul li:before {
     content: '';
@@ -222,94 +227,94 @@ font-family: Impact, Charcoal, sans-serif;
     color: #ff737d;
     text-shadow:  0 0 20px #999595;
 }
-  .mainContent {
-    width: 100%;
-    text-align: center;
-    top: 105%;
-    color: black;
-    position: absolute;
-    z-index: 2;
-    background-image: url("../images/backgrounds/tree-texture-bg.jpg")
-  }
-  .layer1 {
-    background-image: url("../images/backgrounds/sunrise-bg.jpeg");
-  }
-  .layer2 {
-    background-image: url("../images/backgrounds/sunrise-mountains-1.png");
-  }
-  .layer3 {
-    background-image: url("../images/backgrounds/sunrise-mountains-2.png");
-  }
-  .layer4 {
-    background-image: url("../images/backgrounds/sunrise-buildings.png");
-  }
-  .layer5 {
-    background-image: url("../images/backgrounds/sunrise-trees.png");
-  }
+.mainContent {
+width: 100%;
+text-align: center;
+top: 105%;
+color: black;
+position: absolute;
+z-index: 2;
+background-image: url("../images/backgrounds/tree-texture-bg.jpg")
+}
+.layer1 {
+background-image: url("../images/backgrounds/sunrise-bg.jpeg");
+}
+.layer2 {
+background-image: url("../images/backgrounds/sunrise-mountains-1.png");
+}
+.layer3 {
+background-image: url("../images/backgrounds/sunrise-mountains-2.png");
+}
+.layer4 {
+background-image: url("../images/backgrounds/sunrise-buildings.png");
+}
+.layer5 {
+background-image: url("../images/backgrounds/sunrise-trees.png");
+}
 
-  .parallaxTransiton {
-    background-image: url("../images/backgrounds/sunrise-trees.png");
-    top: 5%;
-   z-index: 3;
-   position: absolute;
-  }
-  .flip {
-    z-index: 1;
-    position: relative;
-    bottom: -150px;
-    height:300px;
-    width: 100%;
-    background-image: url("../images/backgrounds/sunrise-treeline-flipped.png");
-  }
-  .headshot {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
+.parallaxTransiton {
+background-image: url("../images/backgrounds/sunrise-trees.png");
+top: 5%;
+z-index: 3;
+position: absolute;
+}
+.flip {
+z-index: 1;
+position: relative;
+/* bottom: -150px; */
+height:300px;
+width: 100%;
+background-image: url("../images/backgrounds/sunrise-treeline-flipped.png");
+}
+.headshot {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+}
 
-  .about-summary {
-      margin: 0 auto;
-      max-width: 75%;
-  }
- p { 
-    font-size: 20px;
-    color: white;
-      margin: 20px;
-      padding: 10px 50px;
-  }
-  h2 {
-    color: white;;
-  }
-  .skillsBox {
-    margin-top: 40px;
-    background: #fff;
-  }
-  .skillLogo {
-    width: 100px;
-    padding: 10px;
-    
-  }
-  .section-title {
-      text-shadow: 2px 2px black;
-    font-family: Impact, Charcoal, sans-serif;
+.about-summary {
+    margin: 0 auto;
+    max-width: 75%;
+}
+p { 
+font-size: 20px;
+color: white;
+    margin: 20px;
+    padding: 10px 50px;
+}
+h2 {
+color: white;;
+}
+.skillsBox {
+margin-top: 40px;
+background: #fff;
+}
+.skillLogo {
+width: 100px;
+padding: 10px;
 
-    font-weight: bold;
-    text-transform: uppercase;
-        padding: 120px 0 60px 0;
-        font-size: 50px;
-  }
-  .section-subTitle {
-          text-transform: uppercase;
-        color: #ff737d;
-      font-size: 25px;
-  }
+}
+.section-title {
+    text-shadow: 2px 2px black;
+font-family: Impact, Charcoal, sans-serif;
+
+font-weight: bold;
+text-transform: uppercase;
+    padding: 120px 0 60px 0;
+    font-size: 50px;
+}
+.section-subTitle {
+        text-transform: uppercase;
+    color: #ff737d;
+    font-size: 25px;
+}
 .accent-hr {
     margin: 10px auto;
     width: 100px;
 }
 .bg-shadow {
     margin: 0 auto;
-    width: 570px;
+    max-width: 570px;
     background: rgba(0, 0, 0, 0.562);
 }
 .bg-shadow p {
@@ -321,11 +326,12 @@ font-family: Impact, Charcoal, sans-serif;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
+    position: ;
     z-index: 0;
   }
 
   .swiper-slide, .featured {
+    border: 1px solid white;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -350,7 +356,8 @@ font-family: Impact, Charcoal, sans-serif;
     transition: .5s;
   }
   .featured {
-    box-shadow:  0px 0px 20px rgba(245, 244, 244, 0.5);
+    /* box-shadow:  0px 0px 20px rgba(245, 244, 244, 0.5); */
+    /* border: 1px solid white; */
     display: inline-block;
     background: black;
   }
@@ -429,6 +436,7 @@ footer {
     background: white;
 }
 footer p {
+    text-transform: uppercase;
     margin-top: 0;
     color: black;
 }
@@ -485,6 +493,17 @@ footer a {
     .swiper-slide, .featured {
         width: 300px;
         height: 300px;
+    }
+    .swiper-slide-active {
+        /* width: 100%; */
+    }
+
+    footer p {
+        padding: 0;
+        font-size: 16px;
+    }
+    .contact ul {
+       
     }
 
 
