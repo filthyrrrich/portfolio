@@ -4,6 +4,9 @@ body {
     /* display: block; */
     overflow-x: hidden;
 }
+html {
+    scroll-behavior: smooth;
+}
 div {
     /* display: block; */
 }
@@ -54,6 +57,9 @@ div {
     text-shadow:  0 0 20px #999595;
     /* border-bottom: solid 2px white; */
 
+}
+.section {
+    
 }
 footer {
     /* position: absolute;
@@ -484,6 +490,9 @@ hr {
     color: #262626;
    
   }
+  .projectContent p {
+      padding: 10px;
+  }
   
   h3 {
     color: white;
@@ -512,9 +521,12 @@ footer a {
     width: 100%;
     height: 20px;
     background: -webkit-linear-gradient(top, rgba(0,0,0, 1),rgba(255,255,255,0));
+    border-top: 2px solid white;
 }
 .contentFadeBottom {
     width: 100%;
     height: 20px;
     background: -webkit-linear-gradient(bottom, rgba(0,0,0, 1), rgba(255,255,255,0));
+    border-bottom: 2px solid white;
+
 }
