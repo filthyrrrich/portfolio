@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
@@ -16,7 +17,7 @@
             <a class="links" href="#about">About</a>
             <a class="links" href="#portfolio">Portfolio</a>
             <a class="links" href="#contact">Contact</a>
-            <a class="links" href="#">Resume</a>
+            <a class="links" href="./assets/images/skills/html-logo.png" download="./assets/images/skills/html-logo.png" target="_blank">Resume</a>
         </div>
     </div>
 
@@ -33,20 +34,37 @@
 
     <div class="mainContent">
         <div class="aboutMe section" id="about">
-            <div class="box">
-                <h2>About Me</h2>
-
+            <div class="aboutBox">
+                <h2 class="section-title">About Me</h2>
+        
+                <!-- <p class="quote">"I never lose. I either win or learn." <br>- Nelson Mandela</p> -->
                 <img class="headshot" src="./assets/images/skills/headshot.jpg">
+                <!-- <hr> -->
+                <p class="quote">"I never lose. I either win or learn." <br><span>- Nelson Mandela</span></p>
+                <hr class="accent-hr">
 
-                <p>Richard Schiffer Jr. is an American born poker player and skateboarder currently living in Colorado.</p>
-                <br>
-                <p>Richard (Rich or Filthy Rich) was born in Silicon Valley, California; I guess you could say technology is in his blood! He lived in the south bay area for 20 years before moving out to the Rocky Mountains. In Colorado, he met his beautiful wife, Alyssa, and together they discovered their passion for playing poker. His background for most of his working life has been in sales and customer service. Recently, he has been working in the casino industry as a Table Games Dealer (BlackJack, Roulette, Poker), but is ready to start the next chapter of his life in the tech industry.</p>
-                <br>
-                <p>Rich is a newly graduated Full-Stack Web Developer from the University of Denver and his wife is currently pursuing her nursing degree at the University of Colorado. Upon graduation he started his own company (Freeroll, LLC). He is currently working on various freelance projects while searching for a full-time job. </p>
-                
+
+                <div class="about-summary">
+                    <!-- <hr> -->
+                    <p>Richard Schiffer Jr. is an American born poker player and skateboarder currently living in Colorado.</p>
+                    
+                    <p>Richard (Rich or Filthy Rich) was born in Silicon Valley, California; I guess you could say technology is in his blood! He lived in the south bay area for 20 years before moving out to the Rocky Mountains. In Colorado, he met his beautiful wife, Alyssa, and together they discovered their passion for playing poker. His background for most of his working life has been in sales and customer service. Recently, he has been working in the casino industry as a Table Games Dealer (BlackJack, Roulette, Poker), but is ready to start the next chapter of his life in the tech industry.</p>
+                    
+                    <p>Rich is a newly graduated Full-Stack Web Developer from the University of Denver and his wife is currently pursuing her nursing degree at the University of Colorado. Upon graduation he started his own company (Freeroll, LLC). He is currently working on various freelance projects while searching for a full-time job. </p>
+                    <!-- <hr> -->
+                </div>
+                <!-- <hr> -->
                 <div class="skills">
-                    <h2>Skills</h2>
+                    
+                    <h2 class="section-subTitle">Skills</h2>
+                    
+                    <hr class="accent-hr">
+                    <p>While my skillset is constantly evovling and improving, these are the technologies I'm currently most comfortable with.</p>
+
                     <div class="skillsBox">
+                            <div class="contentFadeTop"></div>
+
+                    
                         <img class="skillLogo" src="./assets/images/skills/html-logo.png">
                         <img class="skillLogo" src="./assets/images/skills/css-logo.png">
                         <img class="skillLogo" src="./assets/images/skills/javascript-logo.png">
@@ -58,52 +76,62 @@
                         <img class="skillLogo" src="./assets/images/skills/mongo-logo.jpg">
                         <img class="skillLogo" src="./assets/images/skills/mysql-logo.jpg">
                         <img class="skillLogo" src="./assets/images/skills/heroku-logo.png">
+                        <div class="contentFadeBottom"></div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="portfolio section" id="portfolio">
-            <h2>Portfolio</h2>
-            <h3>Highlighted Projects</h3>
-
-            <div class="featured">
-                <div class="imgBox">
-                    <img src="./assets/images/projects/PlatteRiver-pimg.png" class="img-responsive">
-                </div>
-                <div class="projectContent">
-                    <h3>Platte River Website</h3>
-                    <p>Freelance Website I am currently building for a client.</p>
-                    <button>Demo</button>
-                    <button>Github</button>
-                </div>
-            </div>
-            <div class="featured">
-                <div class="imgBox">
-                    <img src="./assets/images/projects/GATESapp-pimg.png" class="img-responsive">
-                </div>
-                <div class="projectContent">
-                    <h3>GATES App</h3>
-                    <p>A MERN stack app designed to help employees access their schedule more easily and communicate with their employer more efficently</p>
-                    <button>Demo</button>
-                    <button>Github</button>
-                </div>
-            </div>
-
         
+        <div class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <h2 class="section-subTitle">Highlighted Projects</h2>
+            <hr class="accent-hr">
+            <p>These projects presented the biggest challenges for me and each taught me very valuable lessons.</p>
+
+            <div class="feature-container">
+                <div class="featured">
+                    <div class="imgBox">
+                        <img src="./assets/images/projects/PlatteRiver-pimg.png" class="img-responsive">
+                    </div>
+                    <div class="projectContent">
+                        <h3>Platte River Website</h3>
+                        <p>Freelance Website I am currently building for a client.</p>
+                        <button>Demo</button>
+                        <button>Github</button>
+                    </div>
+                </div>
+                <div class="featured">
+                    <div class="imgBox">
+                        <img src="./assets/images/projects/GATESapp-pimg.png" class="img-responsive">
+                    </div>
+                    <div class="projectContent">
+                        <h3>GATES App</h3>
+                        <p>A MERN stack app designed to help employees access their schedule more easily and communicate with their employer more efficently</p>
+                        <button>Demo</button>
+                        <button>Github</button>
+                    </div>
+                </div>
+                <div class="featured">
+                    <div class="imgBox">
+                        <img src="./assets/images/projects/TriviaGame-pimg.png" class="img-responsive">
+                    </div>
+                    <div class="projectContent">
+                        <h3>Movie Quotes Trivia</h3>
+                        <p>A fun trivia game I built. Can you guess the movie from some of my favorite quotes?</p>
+                        <button>Demo</button>
+                        <button>Github</button>
+                    </div>
+                </div>
+            </div>
+<hr>
+        <!-- <hr class="accent-hr"> -->
+        <p class="quote"> Flip through some of my other projects.</p>
+        <hr class="accent-hr">
             <div class="swiper-container">
                 <div class="swiper-wrapper parentSwiper">
-                    <div class="swiper-slide">
-                        <div class="imgBox">
-                            <img src="./assets/images/projects/TriviaGame-pimg.png" class="img-responsive">
-                        </div>
-                        <div class="projectContent">
-                            <h3>Movie Quotes Trivia</h3>
-                            <p>A fun trivia game I built. Can you guess the movie from some of my favorite quotes?</p>
-                            <button>Demo</button>
-                            <button>Github</button>
-                        </div>
-                    </div>
                     <div class="swiper-slide">
                         <div class="imgBox">
                             <img src="./assets/images/projects/hangjack-pimg.png" class="img-responsive">
@@ -227,21 +255,47 @@
                     </div>                    
                 </div>
                     <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
 
-        <div class="contact section">
-                <form method="POST" action="https://formspree.io/filthyrrrich@gmail.com">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Send">
-                </form>
                     
+                <div class="swiper-pagination"></div>
+              
+
+
+            </div>
+            
         </div>
+        <hr>
+        <div class="flip"></div>
 
+        <div class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="bg-shadow">
+                    <p class="quote">I'm always looking for new oppertunities; <br> new paths to walk down. <br>Lets take a stroll.</p>
+                    <hr class="accent-hr">
+                </div>
+
+            <ul>
+                <li><a href="mailto:richmschiffer@gmail.com"><span></span></a></li>
+                <li><a href="https://www.linkedin.com/in/rich-schiffer-307a6b156/" target="_blank"><span></span></a></li>
+                <li><a href="https://github.com/filthyrrrich" target="_blank"><span></span></a></li>
+                <li><a href="https://stackoverflow.com/users/9264958/filthyrich" target="_blank"><span></span></a></li>
+                <li><a href="https://www.instagram.com/nevermuckaduck/" target="_blank"><span></span></a></li>
+            </ul>
+            <!-- <footer></footer> -->
+        </div>
+       
+
+        
+        
+
+        <footer>
+                <div class="contentFadeTop"></div>
+                <p> Header Photo original by <a href="https://www.instagram.com/natefantasia/" target="_blank">Nate Fantasia</a> <br>Rich Schiffer &copy;2019 <br>Freeroll, LLC<br></p>
+                <!-- <div class="contentFadeBottom"></div> -->
+
+        </footer>
     </div>
-
+    
 
     
 <script type="text/javascript" src="assets/js/swiper.min.js"></script>
