@@ -609,6 +609,8 @@ footer a {
       
       .navbar .navbar-toggler.open-navbar-toggler span {
         background-color: transparent;
+        box-shadow: none;
+
       }
       .navbar .navbar-toggler.open-navbar-toggler span::before {
         transform: translateY(0px) rotate(45deg);
