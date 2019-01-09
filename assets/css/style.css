@@ -551,8 +551,8 @@ footer a {
     }
     .navbar {
         padding: 0;
-      }
-      .navbar ul {
+    }
+    .navbar ul {
         width: 100%;
         padding: 0;
         background-color: rgba(0,0,0,0.9);
@@ -560,17 +560,23 @@ footer a {
         max-height: 0;
         overflow: hidden;
         transition: all ease-in-out 0.3s;
-      }
-      .navbar ul.open {
+    }
+    .navbar ul.open {
         max-height: 100vh;
-      }
-      .navbar ul li {
+    }
+    .navbar ul li {
         width: 100%;
-      }
-      .navbar ul li a {
+    }
+    .navbar ul li a {
         padding: 0;
-      }
-      .navbar .navbar-toggler {
+    }
+    .navbar-toggler,
+    .navbar-toggler span,
+    .navbar-toggler span::before,
+    .navbar-toggler span::after {
+        box-shadow: 0 0 10px #000000c5;
+    }
+    .navbar .navbar-toggler {
         display: block;
         position: absolute;
         height: 40px;
@@ -582,7 +588,7 @@ footer a {
         outline: none;
         padding: 0 5px;
         cursor: pointer;
-      }
+    }
       .navbar .navbar-toggler span,
       .navbar .navbar-toggler span::before,
       .navbar .navbar-toggler span::after {
