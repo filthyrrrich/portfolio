@@ -33,15 +33,15 @@ body {
 }
 
 #parallax-container div, .parallaxTransiton{
-left: 0;
-position: absolute;
-top: 0;
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-transform: translateY(0px);
-height: 100%;
-width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(0px);
+    height: 100%;
+    width: 100%;
 }
 
 hr {
@@ -248,23 +248,22 @@ p {
     padding: 10px 50px;
 }
 h2 {
-color: white;;
+    color: white;;
 }
 .skillsBox {
-margin-top: 40px;
-background: #fff;
+    margin-top: 40px;
+    background: #fff;
 }
 .skillLogo {
-width: 100px;
-padding: 10px;
+    width: 100px;
+    padding: 10px;
 
 }
 .section-title {
     text-shadow: 2px 2px black;
-font-family: Impact, Charcoal, sans-serif;
-
-font-weight: bold;
-text-transform: uppercase;
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
     padding: 120px 0 60px 0;
     font-size: 50px;
 }
@@ -286,13 +285,13 @@ text-transform: uppercase;
     margin: 0;
     padding: 0;
 }
-  .swiper-container {
+.swiper-container {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
+}
 
-  .swiper-slide, .featured {
+.swiper-slide, .featured {
     cursor: pointer;
     border: 1px solid white;
     position: relative;
@@ -303,51 +302,51 @@ text-transform: uppercase;
     margin: 10px 0;
     background: #fff;
     overflow: hidden;
-  }
+}
 .swiper-wraper {
     position: absolute;
     left: 0;
 }
-  .swiper-pagination-bullet {
+.swiper-pagination-bullet {
     background: white;
-  }
-  .swiper-pagination-bullet-active {
+}
+.swiper-pagination-bullet-active {
     background: #007aff;
   
-  }
-  .swiper-slide-active, .featured  {
+}
+.swiper-slide-active, .featured  {
     overflow: hidden;
     background: #000;
     box-shadow:  0 0 20px rgba(245, 244, 244, 0.5);
     transition: .5s;
-  }
+}
   
-  .featured:hover, .swiper-slide-active:hover {
+.featured:hover, .swiper-slide-active:hover {
     box-shadow:  0 0 60px #ff737d;
-  }
-  .feature-container {
+}
+.feature-container {
       margin: 40px 0;
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
-  }
+}
   
   .swiper-slide-active .imgBox,.featured .imgBox {
     position: relative;
-  }
+}
   
-  .imgBox img {
+.imgBox img {
     position: relative;
     transition: 0.5s;
     width: 100%;
-  }
-  
-  .swiper-slide-active:hover .imgBox img, .featured:hover .imgBox img{
+}
+
+.swiper-slide-active:hover .imgBox img, .featured:hover .imgBox img{
     opacity: 0.2;
     transform: translateY(-20px);
-  }
+}
   
-  .swiper-slide-active .projectContent, .featured .projectContent {
+.swiper-slide-active .projectContent, .featured .projectContent {
     color: white;
     position: absolute;
     bottom: -40px;
@@ -356,16 +355,16 @@ text-transform: uppercase;
     box-sizing:  border-box;
     opacity: 0;
   
-  }
-  .swiper-slide-active:hover .projectContent,.featured:hover .projectContent  {
+}
+.swiper-slide-active:hover .projectContent,.featured:hover .projectContent  {
     bottom: 10%;
     transition: 0.5s;
     opacity: 1;
-  }
-  .swiper-slide-active .projectContent h3, .featured .projectContent h3 {
+}
+.swiper-slide-active .projectContent h3, .featured .projectContent h3 {
     font-size: 48px; 
-  }
-  .swiper-slide-active .projectContent a, .featured .projectContent a {
+}
+.swiper-slide-active .projectContent a, .featured .projectContent a {
     border: none;
     text-decoration: none;
     margin: 0 2px;
@@ -374,20 +373,20 @@ text-transform: uppercase;
     color: #fff;
     font-size: 18px;
     padding: 10px 20px;
-  }
+}
   
-  .swiper-slide-active .projectContent a:hover, .featured .projectContent a:hover{
+.swiper-slide-active .projectContent a:hover, .featured .projectContent a:hover{
     background: #f6fe1b;
     color: #262626;
    
-  }
-  .projectContent p {
+}
+.projectContent p {
       padding: 10px;
-  }
+}
   
-  h3 {
+h3 {
     color: white;
-  }
+}
 
 footer {
     overflow-y: hidden;
@@ -452,15 +451,15 @@ footer a {
     top: 0;
     left: 0;
     z-index: 10;
-  }
+}
   .navbar a {
     text-transform: uppercase;
     text-shadow:  0 0 20px #000000;
 
     text-decoration: none;
     color: #fff;
-  }
-  .navbar a.navbar-brand {
+}
+.navbar a.navbar-brand {
     float: left;
     height: inherit;
     line-height: inherit;
@@ -469,49 +468,36 @@ footer a {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 2px;
-  }
-  .navbar a.navbar-brand span {
+}
+.navbar a.navbar-brand span {
     font-size: 28px;
     font-weight: 700;
-  }
-  .navbar ul {
+}
+.navbar ul {
     float: right;
     list-style: none;
     height: inherit;
     line-height: inherit;
     padding: 0 50px;
-  }
-  .navbar ul li {
+}
+.navbar ul li {
     display: inline-block;
-  }
-  .navbar ul li a {
+}
+.navbar ul li a {
     display: block;
     text-align: center;
     min-width: 120px;
     padding: 0 30px;
-  }
+}
 
-  .navbar .navbar-toggler {
+.navbar .navbar-toggler {
     display: none;
-  }
+}
 
-  .navbar a.active {
+.navbar a.active {
     color: #ff737d;
     text-shadow:  0 0 20px #999595;
 } 
-
-
-/* @media (max-width: 991px) {
-    .navbar ul {
-      padding: 0 10px;
-    }
-    .navbar ul li a {
-      min-width: 100px;
-      padding: 0 20px;
-    }
-  } */
-
-
 
 @media screen and (max-width: 991px) {
     #parallax-container div, .parallaxTransiton{
@@ -589,9 +575,9 @@ footer a {
         padding: 0 5px;
         cursor: pointer;
     }
-      .navbar .navbar-toggler span,
-      .navbar .navbar-toggler span::before,
-      .navbar .navbar-toggler span::after {
+    .navbar .navbar-toggler span,
+    .navbar .navbar-toggler span::before,
+    .navbar .navbar-toggler span::after {
         display: block;
         content: '';
         background-color: #fff;
@@ -599,25 +585,25 @@ footer a {
         width: 28px;
         border-radius: 4px;
         transition: all ease-in-out 0.3s;
-      }
-      .navbar .navbar-toggler span::before {
+    }
+    .navbar .navbar-toggler span::before {
         transform: translateY(-8px);
-      }
-      .navbar .navbar-toggler span::after {
+    }
+    .navbar .navbar-toggler span::after {
         transform: translateY(5px);
-      }
-      
-      .navbar .navbar-toggler.open-navbar-toggler span {
+    }
+    
+    .navbar .navbar-toggler.open-navbar-toggler span {
         background-color: transparent;
         box-shadow: none;
 
-      }
-      .navbar .navbar-toggler.open-navbar-toggler span::before {
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::before {
         transform: translateY(0px) rotate(45deg);
-      }
-      .navbar .navbar-toggler.open-navbar-toggler span::after {
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::after {
         transform: translateY(-3px) rotate(-45deg);
-      }
+    }
     footer p {
         padding: 0;
         font-size: 16px;
