@@ -15,9 +15,6 @@ window.addEventListener('scroll', () => {
     transBox.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
     pTrans.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
 
-    
-    
-
     // Active Links
     if(sections[2].getBoundingClientRect().top < 100) {
         changeLinkState(2);
@@ -62,6 +59,7 @@ function changeLinkState(x) {
     links[x].classList.add('active');
 }
 
+// Mobile Nav
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar ul");
 const navbarLinks = document.querySelectorAll(".navbar a");
@@ -80,31 +78,3 @@ function navbarLinkClick() {
     navbarToggler.click();
   }
 }
-
-// let anchorlinks = document.querySelectorAll('a[href^="#"]')
- 
-// for (let item of anchorlinks) { // relitere 
-//     item.addEventListener('click', (e)=> {
-//         let hashval = item.getAttribute('href')
-//         let target = document.querySelector(hashval)
-//         target.scrollIntoView({
-//             behavior: 'smooth',
-//             block: 'start'
-//         })
-//         history.pushState(null, null, hashval)
-//         e.preventDefault()
-//     })
-// }
-// Navbar scroll
-// const nav = document.getElementsByClassName("navbar");
-// window.onscroll = function sticky() {
-//     if (window.pageYOffset > window.innerHeight / 1.2){
-//         nav[0].classList.add("appear");
-//     } else {
-//         nav[0].classList.remove("appear");
-//     }
-// }
-
-// applys active on links
-// const links = document.querySelectorAll('.links');
-// const sections = document.querySelectorAll('.section');
