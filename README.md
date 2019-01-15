@@ -7,6 +7,7 @@ This is my current updated portfolio as of January 2019. Please feel free to rea
 HTML5
 CSS3
 JavaScript
-[Swiper](http://idangero.us/swiper/)
+Swiper
 ```
 
+Check out [Swiper](http://idangero.us/swiper/), its awesome!
