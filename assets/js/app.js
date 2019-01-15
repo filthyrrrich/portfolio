@@ -1,9 +1,11 @@
 const nav = document.getElementsByClassName("navbar");
 const links = document.querySelectorAll('.links');
 const sections = document.querySelectorAll('.section');
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector(".navbar ul");
+const navbarLinks = document.querySelectorAll(".navbar a");
 
 window.addEventListener('scroll', () => {
-
     // Parallax
     let parent = document.getElementById('parallax-container');
     let children = parent.getElementsByTagName('div');
@@ -60,19 +62,13 @@ function changeLinkState(x) {
 }
 
 // Mobile Nav
-const navbarToggler = document.querySelector(".navbar-toggler");
-const navbarMenu = document.querySelector(".navbar ul");
-const navbarLinks = document.querySelectorAll(".navbar a");
-
 navbarToggler.addEventListener("click", navbarTogglerClick);
+navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
 
 function navbarTogglerClick() {
   navbarToggler.classList.toggle("open-navbar-toggler");
   navbarMenu.classList.toggle("open");
 }
-
-navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
-
 function navbarLinkClick() {
   if(navbarMenu.classList.contains("open")) {
     navbarToggler.click();
