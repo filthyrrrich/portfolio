@@ -31,8 +31,11 @@ window.addEventListener('scroll', () => {
     // Navbar Appear
     if (window.pageYOffset > window.innerHeight / 1.05){
         nav[0].classList.add("appear");
+        document.getElementById("intro").style.display = "none";
     } else {
         nav[0].classList.remove("appear");
+        document.getElementById("intro").style.display = "initial";
+
     }
 
  }, false)
