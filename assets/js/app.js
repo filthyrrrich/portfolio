@@ -1,9 +1,9 @@
-const nav = document.getElementsByClassName("navbar");
+const nav = document.getElementsByClassName('navbar');
 const links = document.querySelectorAll('.links');
 const sections = document.querySelectorAll('.section');
-const navbarToggler = document.querySelector(".navbar-toggler");
-const navbarMenu = document.querySelector(".navbar ul");
-const navbarLinks = document.querySelectorAll(".navbar a");
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarMenu = document.querySelector('.navbar ul');
+const navbarLinks = document.querySelectorAll('.navbar a');
 
 window.addEventListener('scroll', () => {
     // Parallax
@@ -30,11 +30,11 @@ window.addEventListener('scroll', () => {
 
     // Navbar Appear
     if (window.pageYOffset > window.innerHeight / 1.05){
-        nav[0].classList.add("appear");
-        document.getElementById("intro").style.display = "none";
+        nav[0].classList.add('appear');
+        document.getElementById('intro').style.display = 'none';
     } else {
-        nav[0].classList.remove("appear");
-        document.getElementById("intro").style.display = "initial";
+        nav[0].classList.remove('appear');
+        document.getElementById('intro').style.display = 'initial';
 
     }
 
@@ -65,15 +65,15 @@ function changeLinkState(x) {
 }
 
 // Mobile Nav
-navbarToggler.addEventListener("click", navbarTogglerClick);
-navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+navbarToggler.addEventListener('click', navbarTogglerClick);
+navbarLinks.forEach(elem => elem.addEventListener('click', navbarLinkClick));
 
 function navbarTogglerClick() {
-  navbarToggler.classList.toggle("open-navbar-toggler");
-  navbarMenu.classList.toggle("open");
+  navbarToggler.classList.toggle('open-navbar-toggler');
+  navbarMenu.classList.toggle('open');
 }
 function navbarLinkClick() {
-  if(navbarMenu.classList.contains("open")) {
+  if(navbarMenu.classList.contains('open')) {
     navbarToggler.click();
   }
 }
