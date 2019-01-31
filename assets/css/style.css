@@ -97,6 +97,7 @@ hr {
     position: fixed;
     background-image: url("../images/backgrounds/tree-texture-bg.jpg");
     opacity: 0.9;
+    transition: all 2s;
 }
 .appear a:hover {
     color: #ff737d;
@@ -526,6 +527,10 @@ footer a {
     text-align: center;
     min-width: 120px;
     padding: 0 30px;
+}
+.navbar ul li a:hover,
+.navbar a:hover {
+    color: #ff737d;
 }
 .navbar .navbar-toggler {
     display: none;
