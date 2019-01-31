@@ -5,6 +5,11 @@ const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarMenu = document.querySelector('.navbar ul');
 const navbarLinks = document.querySelectorAll('.navbar a');
 
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.loader');
+    loader.className += ' hidden';
+});
+
 window.addEventListener('scroll', () => {
     // Parallax
     let parent = document.getElementById('parallax-container');
