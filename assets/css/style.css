@@ -33,7 +33,7 @@ body {
     background: black;
 }
 .loader.hidden {
-    animation: fadeOut 1s;
+    animation: fadeOut 1.5s;
     animation-fill-mode: forwards;
 }
 .lds-dual-ring {
@@ -66,6 +66,12 @@ body {
         visibility: hidden;
     };
 }
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        visibility: visible;
+    };
+}
 .intro span.job {
     line-height: 0.5;
     font-size: 40px;
@@ -93,11 +99,13 @@ hr {
     margin: 0;
 }
 .appear {
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
     border-bottom: solid 2px white;
     position: fixed;
     background-image: url("../images/backgrounds/tree-texture-bg.jpg");
     opacity: 0.9;
-    transition: all 2s;
+    /* transition: opacity 2s; */
 }
 .appear a:hover {
     color: #ff737d;
@@ -490,7 +498,7 @@ footer a {
     top: 0;
     left: 0;
     z-index: 10;
-    transition: color 2s;
+    /* transition: color 2s; */
 }
 .navbar a {
     text-transform: uppercase;
