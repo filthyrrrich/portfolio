@@ -1,3 +1,25 @@
+/* ANIMATIONS */
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fadeOut {
+      100% {
+          opacity: 0;
+          visibility: hidden;
+      };
+  }
+  @keyframes fadeIn {
+      100% {
+          opacity: 1;
+          visibility: visible;
+      };
+  }
+
 html {
     height: auto;
     scroll-behavior: smooth;
@@ -52,26 +74,6 @@ body {
   border-color: #fff transparent #fff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    };
-}
-@keyframes fadeIn {
-    100% {
-        opacity: 1;
-        visibility: visible;
-    };
-}
 .intro span.job {
     line-height: 0.5;
     font-size: 40px;
@@ -105,7 +107,6 @@ hr {
     position: fixed;
     background-image: url("../images/backgrounds/tree-texture-bg.jpg");
     opacity: 0.9;
-    /* transition: opacity 2s; */
 }
 .appear a:hover {
     color: #ff737d;
@@ -501,7 +502,6 @@ footer a {
     top: 0;
     left: 0;
     z-index: 10;
-    /* transition: color 2s; */
 }
 .navbar a {
     text-transform: uppercase;
@@ -551,6 +551,7 @@ footer a {
     text-shadow:  0 0 20px #999595;
 } 
 
+/* MOBILE */
 @media screen and (max-width: 991px) {
     #parallax-container div, .parallaxTransiton{
         background-position: 75% 25%;
