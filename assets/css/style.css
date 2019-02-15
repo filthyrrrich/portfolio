@@ -98,6 +98,9 @@ body {
     height: 100%;
     width: 100%;
 }
+.parallaxTransiton {
+    position: relative;
+}
 hr {
     margin: 0;
 }
