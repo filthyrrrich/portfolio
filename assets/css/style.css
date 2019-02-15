@@ -81,6 +81,7 @@ body {
 .intro span.name {
     color: #ff737d;
 }
+
 #parallax-container {
     /* display: block; */
     height: 100vh; 
@@ -564,6 +565,9 @@ footer a {
 
 /* MOBILE */
 @media screen and (max-width: 991px) {
+    body {
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
     #parallax-container div, .parallaxTransiton{
         background-position: 75% 25%;
         background-size: cover;
