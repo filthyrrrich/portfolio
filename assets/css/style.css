@@ -98,9 +98,9 @@ body {
     width: 100%;
 }
 .parallaxTransiton {
-    left: 0;
+
     position: relative;
-    top: 0;
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
