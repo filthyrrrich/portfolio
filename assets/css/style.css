@@ -21,11 +21,11 @@
   }
 
 html {
-    height: auto;
+    height: 100vh;
     scroll-behavior: smooth;
 }
 body {
-    height: auto;
+    /* height: auto; */
     -webkit-overflow-scrolling: touch;
 }
 .intro {
@@ -104,7 +104,8 @@ body {
 }
 .parallaxTransiton {
 
-    position: absolute;
+    position: relative;
+    bottom: -180px;
     
     background-position: center;
     background-size: cover;
