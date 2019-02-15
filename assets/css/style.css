@@ -104,12 +104,12 @@ body {
 }
 .parallaxTransiton {
 
-    position: relative;
+    position: absolute;
     
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(0px);
+    /* transform: translateY(0px); */
     height: 100%;
     width: 100%;
 }
@@ -609,8 +609,6 @@ footer a {
     }
     .navbar {
         padding: 0;
-        height: 40px;
-        line-height: 40px;
     }
     .navbar ul {
         width: 100%;
@@ -639,12 +637,12 @@ footer a {
     .navbar .navbar-toggler {
         display: block;
         position: absolute;
-        height: 20px;
-        top: 10px;
-        right: 30px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
         background-color: transparent;
         color: #fff;
-        border: 2px solid #fff;
+        border: 3px solid #fff;
         outline: none;
         padding: 0 5px;
         cursor: pointer;
@@ -655,16 +653,16 @@ footer a {
         display: block;
         content: '';
         background-color: #fff;
-        height: 2px;
-        width: 14px;
+        height: 3px;
+        width: 28px;
         border-radius: 4px;
         transition: all ease-in-out 0.3s;
     }
     .navbar .navbar-toggler span::before {
-        transform: translateY(-4px);
+        transform: translateY(-8px);
     }
     .navbar .navbar-toggler span::after {
-        transform: translateY(2px);
+        transform: translateY(5px);
     }
 
     .navbar .navbar-toggler.open-navbar-toggler span {
@@ -675,7 +673,7 @@ footer a {
         transform: translateY(0px) rotate(45deg);
     }
     .navbar .navbar-toggler.open-navbar-toggler span::after {
-        transform: translateY(-2px) rotate(-45deg);
+        transform: translateY(-3px) rotate(-45deg);
     }
     footer p {
         padding: 0;
