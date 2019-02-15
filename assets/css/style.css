@@ -87,7 +87,6 @@ body {
 }
 #parallax-container div, 
 .parallaxTransiton{
-    min-height: 200px;
     left: 0;
     position: fixed;
     top: 0;
@@ -95,11 +94,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     transform: translateY(0px);
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 .parallaxTransiton {
-    z-index: 10;
+    background-image: url("../images/backgrounds/sunrise-trees.png");
+    top: 5%;
+    z-index: 1;
+    position: absolute;
 }
 hr {
     margin: 0;
@@ -284,12 +286,7 @@ hr {
 .layer5 {
     background-image: url("../images/backgrounds/sunrise-trees.png");
 }
-.parallaxTransiton {
-    background-image: url("../images/backgrounds/sunrise-trees.png");
-    top: 5%;
-    z-index: 1;
-    position: absolute;
-}
+
 .headshot {
     width: 300px;
     height: 300px;
