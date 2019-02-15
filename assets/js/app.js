@@ -18,10 +18,10 @@ window.addEventListener('scroll', () => {
     for(let i = 0; i < children.length; i++) {
       children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
     }
-    let transBox = document.getElementById('transBox');
-    let pTrans = document.getElementById('p-trans');
-    transBox.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
-    pTrans.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
+    // let transBox = document.getElementById('transBox');
+    // let pTrans = document.getElementById('p-trans');
+    // transBox.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
+    // pTrans.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
 
     // Active Links
     if(sections[2].getBoundingClientRect().top < 100) {

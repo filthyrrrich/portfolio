@@ -82,13 +82,14 @@ body {
     color: #ff737d;
 }
 #parallax-container {
-    height: 100%; 
-    width: 100%;
+    /* display: block; */
+    height: 100vh; 
+    /* width: 100%; */
 }
 #parallax-container div, 
 .parallaxTransiton{
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-position: center;
     background-size: cover;
@@ -261,7 +262,7 @@ hr {
     text-align: center;
     top: 105%;
     color: black;
-    position: absolute;
+    position: relative;
     z-index: 2;
     background-image: url("../images/backgrounds/tree-texture-bg.jpg")
 }
