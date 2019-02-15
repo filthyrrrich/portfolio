@@ -18,14 +18,10 @@ window.addEventListener('scroll', () => {
     for(let i = 0; i < children.length; i++) {
       children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
     }
-
-    // MOBILE parallax fix
-    // if(screen.width <= 991) {
-      // let transBox = document.getElementById('transBox');
-      // let pTrans = document.getElementById('p-trans');
-      // transBox.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
-      // pTrans.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
-    // }
+    let transBox = document.getElementById('transBox');
+    let pTrans = document.getElementById('p-trans');
+    transBox.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
+    pTrans.style.transform ='translateY(-' + (window.pageYOffset * 4 / children.length) + 'px)';
 
     // Active Links
     if(sections[2].getBoundingClientRect().top < 100) {
@@ -42,17 +38,10 @@ window.addEventListener('scroll', () => {
     if (window.pageYOffset > window.innerHeight / 1.05){
         nav[0].classList.add('appear');
         document.getElementById('intro').style.display = 'none';
-        // document.getElementById('parallax-container').style.visibility = 'hidden';
     } else {
         nav[0].classList.remove('appear');
         document.getElementById('intro').style.display = 'initial';
-        // document.getElementById('parallax-container').style.visibility = 'visible';
-    }
 
-    if (window.pageYOffset > window.innerHeight / 0.5 ){
-      document.getElementById('parallax-container').style.visibility = 'hidden';
-    } else {
-      document.getElementById('parallax-container').style.visibility = 'initial';
     }
 
  }, false)
