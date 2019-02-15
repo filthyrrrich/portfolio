@@ -83,11 +83,15 @@ body {
 }
 
 #parallax-container {
-    /* display: block; */
+    /* display: hidden; */
+    visibility: visible;
+
     height: 100vh; 
     /* width: 100%; */
 }
 #parallax-container div {
+    /* visibility: hidden; */
+
     left: 0;
     position: fixed;
     top: 0;
